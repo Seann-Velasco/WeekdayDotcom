@@ -1,0 +1,134 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.header{
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+li {
+    float: left;
+}
+
+li a{
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a:hover{
+    color: #fff;
+    background-color: #707070;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 20px 0 10px;
+}
+
+.committee-finance {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.deliverables-board {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.Finances{
+    background: #ffffff;
+    border-radius: 8px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px 20px;
+    text-align: center; 
+    border: 1px solid #eaeaea; 
+}
+
+th {
+    background-color: #f2f4f8;
+    color: #555;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background-color: #f9fafc;
+}
+
+td {
+    font-size: 1rem;
+    color: #333;
+}
+
+td strong {
+    color: #222;
+    font-weight: 600;
+}
+
+#switch_button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    background-color: #f1f1f1;
+    color: rgb(0, 0, 0);
+    border:rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+#switch_button:hover {
+    color: #fff;
+    background-color: #707070;
+}
+
+@media screen and (max-width: 600px) {
+    table, th, td {
+        display: block;
+    }
+
+    th, td {
+        text-align: center;
+        padding: 10px;
+    }
+
+    th {
+        display: none; 
+    }
+}

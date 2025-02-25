@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    transition: background 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,1.5);
+    z-index: 4;
+}
+
+nav.solid {
+    background-color: #466D1D;
+}
+
+nav .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo .icon {
+    width: 50px;
+    height: 50px;
+    margin-left: 50px;
+}
+
+.logo .icon img {
+    width: 100%;
+    height: 100%;
+}
+
+.logo .title a {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.logo .title a:hover {
+    color: #84FF00;
+}
+
+.navbar .right-nav {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.right-nav .searchbox {
+    margin-right: 50px;
+    width: 100%;
+}
+
+.searchbox input {
+    font-size: 0.9em;
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    transition: 0.1s ease;
+    z-index: 2;
+}
+
+.searchbox input:focus,
+.searchbox input:valid {
+    color: #636363;
+    border: 3px solid #84FF00;
+}
+
+.right-nav .menu {
+    display: flex;
+    align-items: center;
+}
+
+.right-nav .menu li {
+    margin-right: 38px;
+    list-style: none;
+}
+
+.right-nav .menu li a {
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+}
+
+.right-nav .menu li a:hover {
+    color: #84FF00;
+}
+
+section {
+    width: 100%;
+    height: 140vh;
+}
+
+#cover {
+    background-color: #636363;
+}
+
+.cover-background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.cover-background img {
+    width: 100%;
+    height: 100%;
+}
+
+.cover-contents {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.cover-contents .content-background {
+    position: relative;
+    width: 30%;
+    height: 45%;
+    background-color: #543d08;
+    opacity: 95%;
+    border-radius: 5px;
+}
+
+.cover-contents .content-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.content-container form {
+    width: 100%;
+}
+
+.user-container,
+.pass-container,
+.login-button,
+.line,
+.reset-password {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-container input,
+.pass-container input {
+    font-size: 1em;
+    width: 60%;
+    outline: none;
+    padding: 10px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    transition: 0.1s ease;
+    margin-bottom: 20px;
+    z-index: 2;
+}
+
+.userline,
+.passline {
+    position: absolute;
+    font-size: 1em;
+    line-height: 4px;
+    color: #fff;
+    transition: 0.2s ease;
+    margin-bottom: 20px;
+}
+
+.user-container input:focus,
+.user-container input:valid,
+.pass-container input:focus,
+.pass-container input:valid {
+    color: #84FF00;
+    border: 3px solid #84FF00;
+}
+
+.user-container input:focus + .userline,
+.user-container input:valid + .userline,
+.pass-container input:focus + .passline,
+.pass-container input:valid + .passline {
+    color: #84FF00;
+    height: 4px;
+    padding: 0 12px;
+    background: #685833;
+    transform: translate(-100px, -20px) scale(0.9);
+    z-index: 2;
+}
+
+.content-container .line {
+    border-top: 2px solid #fff;
+    margin-left: 15%;
+    width: 70%;
+}
+
+.login-button {
+    margin-top: 20px;
+}
+
+.login-button button{
+    font-size: 1em;
+    width: 65%;
+    padding: 10px;
+    border-radius:5px;
+}
+
+.reset-password a {
+    margin-top: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.reset-password a:hover {
+    color: #84FF00;
+} 
+
+.cover-contents .content-background-2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 18%;
+    background-color: #543d08;
+    opacity: 95%;
+    border-radius: 5px;
+    margin-top: 2%;
+}
+
+.google-login {
+    width: 65%;
+    text-decoration: none;
+}
+
+.google-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.google-login img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.google-button p {
+    text-decoration: none;
+}
+
+.content-background-2 .content-container-2 {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-container-2 p {
+    font-size: 1em;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.content-container-2 a {
+    font-size: 1em;
+    color: #fff;
+}
+
+.content-container-2 a:hover {
+    color: #84FF00;
+}
