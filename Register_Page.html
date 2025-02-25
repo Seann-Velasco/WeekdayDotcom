@@ -34,7 +34,7 @@
                     <input type="password" id="password" name="password" required>
                     <button type="button" onclick="togglePassword()">Show</button>
                 </div>
-                <button type="submit" class="btn">Create Account</button>
+                <button type="submit" class="btn" id="createaccount">Create Account</button>
             </form>
             <div class="link">
                 <p>Already have an account? <a href="#">Log in</a></p>
@@ -67,7 +67,7 @@
         const database = getDatabase(app);
         const auth = getAuth();
         //Send data into the database
-        document.getElementById("registration-form").addEventListener("submit", function(event) {
+        createaccount.addEventListener('click',(e) => {
             var email = document.getElementById('email').value;
             var username = document.getElementById('username').value;
             var password = document.getElementById('password').value;
