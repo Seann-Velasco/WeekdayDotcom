@@ -1,7 +1,7 @@
         body {
             margin: 0;
             padding: 0;
-            background: linear-gradient(to bottom, white, blue);
+            background: linear-gradient(to top, white, blue);
             font-family: Arial, sans-serif;
         }
         .container {
