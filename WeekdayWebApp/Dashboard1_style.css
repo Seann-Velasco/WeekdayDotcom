@@ -1,0 +1,97 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.header{
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+li {
+    float: left;
+}
+
+li a{
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a:hover{
+    color: #fff;
+    background-color: #707070;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 20px 0 10px;
+}
+
+.task-timeline {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.task-timeline .members {
+    margin: 10px 0;
+}
+
+.members div {
+    background: #e6e6e6;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.task-board {
+    display: flex;
+    gap: 20px;
+}
+
+.column {
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    flex: 1;
+}
+
+.column h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.task {
+    background: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.task::before {
+    content: '\2022';
+    color: #666;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
