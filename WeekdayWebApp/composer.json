@@ -1,8 +1,0 @@
-{
-    "name": "Snoop-Code/WeekdayWebApp",
-    "description": "Project Management Web Application for School Committees",
-    "require": {
-        "php": ">=7.3",
-        "google/apiclient": "^2.18"
-    }
-}
