@@ -70,7 +70,9 @@
         // Import Firebase modules
 
 // Event listener for account creation
-document.getElementById('createaccount').addEventListener('click', (e) => {
+document.getElementById('createaccount').addEventListener("click", saveaccount);
+
+function saveaccount() {
     var email = document.getElementById('email').value;
     var username = document.getElementById('username').value;
     var password = document.getElementById('password').value;
@@ -94,7 +96,7 @@ document.getElementById('createaccount').addEventListener('click', (e) => {
             console.error("Error:", error.code, error.message);
             alert("Error: " + error.message);
         });
-});
+}
 
         function togglePassword() {
             var passwordField = document.getElementById("password");
