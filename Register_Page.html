@@ -37,7 +37,7 @@
                 <input type="submit" class="btn" id="createaccount">Create Account</input>
             </form>
             <div class="link">
-                <p>Already have an account? <a href="#">Log in</a></p>
+                <p>Already have an account? <a href="index.html">Log in</a></p>
             </div>
         </div>
         </div>
@@ -76,11 +76,11 @@
                 .then((userCredential) => {
                     // Signed up 
                     const user = userCredential.user;
-
                     set(ref(database, 'users/' + user.uid),{
                         username: username,
                         email: email
-                    }
+                    })
+                    alert("user created");
                 })
                 .catch((error) => {
                     const errorCode = error.code;
@@ -95,6 +95,5 @@
                 passwordField.type = "password";
             }
         }
-        event.preventDefault();
     </script>
 </html>
