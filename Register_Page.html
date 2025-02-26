@@ -70,7 +70,7 @@
         // Import Firebase modules
 
 // Event listener for account creation
-document.getElementById('createaccount').addEventListener("click", alert("nababasa ng listener"));
+document.getElementById('createaccount').addEventListener("click", saveaccount);
 
 function saveaccount() {
     var email = document.getElementById('email').value;
@@ -80,7 +80,7 @@ function saveaccount() {
     createUserWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
             const user = userCredential.user;
-            console.log("User created:", user);
+            alert("User created:", user);
 
             set(ref(database, 'users/' + user.uid), {
                 username: username,
